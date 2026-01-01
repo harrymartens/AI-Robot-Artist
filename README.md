@@ -1,6 +1,8 @@
 # Creative Robotic Assistant
 
-An interactive control loop that lets you generate, edit, and draw images with an xArm robot. The app orchestrates OpenAI image generation/editing, image processing, path planning, and robot motion to draw on a physical canvas.
+This project explores creative robotics using the xArm platform, combining AI-driven generation, computer vision, and robotic control to enable a robot arm to autonomously create physical sketches. The system integrates generative models with perception and motion planning pipelines, translating abstract visual outputs into executable robot trajectories through iterative experimentation and refinement.
+
+Developed by Harry Martens at the Human-Robot Interaction Lab at UNSW as part of his undergraduate engineering thesis and continuous work as a research assistant.
 
 ## Features
 - Text-to-image drawing: `generate` a prompt and trace it on the canvas.
