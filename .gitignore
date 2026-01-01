@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# OS/Editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# Local config / secrets
+.env
+.env.*
+
+# Data and outputs
+images/captured/
+
+# Logs
+*.log
+logs/
