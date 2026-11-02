@@ -81,7 +81,9 @@ class DrawingTools:
         
         # Erase Image
         erase_vectors = self.path_planning_service.plan_erase_path(image)
-        self.movement_service.follow_vectors(erase_vectors, image)
+        # Erase centres are coverage positions, not a contour: never RDP-simplify them,
+        # or intermediate placements are dropped and ink is left behind.
+        self.movement_service.follow_vectors(erase_vectors, image, simplify=False)
         
         self.robot_service.move_docked_position()
 

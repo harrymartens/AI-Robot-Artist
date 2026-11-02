@@ -119,7 +119,7 @@ class PathPlanningService:
         
         return vectors
     
-    def _plan_eraser_centers(bin_img, rect_w, rect_h):
+    def _plan_eraser_centers(self, bin_img, rect_w, rect_h):
         """
         Plan minimal-movement eraser path using dynamic region coverage.
         Ensures all ink is erased, avoids unnecessary extra steps.
